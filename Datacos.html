@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="Wan.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK RentAutoCars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SPK RentAutoCars </h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="car">Mobil yang Ingin Disewa</label>
+            <select id="car" name="car" required>
+                <option value="">Pilih Mobil</option>
+                <option value="TOYOTA GRMN YARIS">TOYOTA GRMN YARIS</option>
+                <option value="HONDA CIVIC Type R">HONDA CIVIC Type R</option>
+                <option value="MAZDA 3 HATCHBACK">LEXUS XR 500</option>
+                <option value="TOYOTA GR FORTUNER 2.8">NISSAN GTR R35</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pickup-date">Tanggal Penjemputan</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+        </div>
+        <div class="form-group">
+            <label for="pickup-time">Waktu Penjemputan</label>
+            <input type="time" id="pickup-time" name="pickup-time" required>
+        </div>
+        <div class="form-group">
+            <label for="return-date">Tanggal Pengembalian</label>
+            <input type="date" id="return-date" name="return-date" required>
+        </div>
+        <div class="form-group">
+            <label for="return-time">Waktu Pengembalian</label>
+            <input type="time" id="return-time" name="return-time" required>
+        </div>
+        <div class="form-group">
+            <label for="notes">Catatan Tambahan</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+        </div>
+        <a href="end.html"><button>Kirim</a></button>
+        <a href="rentalmobil.html"><button>Kembali</a></button>
+    </form>
+</div>
+
+</body>
+</html>
